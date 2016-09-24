@@ -94,34 +94,40 @@ int main()
 			std::cin >> countSpeed;
 			// Create a new int to control the counting speed in ms
 			int countSpeedms;
+			std::string countSpeedName;
 
 			// If given speed 'x'set countSpeedms to 'yyyy' else, etc
 			if (countSpeed=="1")
 			{
 				countSpeedms = 2000;
+				countSpeedName = "Slow";
 			}
 			else if (countSpeed=="2")
 			{
 				countSpeedms = 1000;
+				countSpeedName = "Normal";
 			}
 			else if (countSpeed == "3")
 			{
 				countSpeedms = 500;
+				countSpeedName = "Fast";
 			}
 			else if (countSpeed == "4")
 			{
 				countSpeedms = 250;
+				countSpeedName = "Faster";
 			}
 			else if (countSpeed == "5")
 			{
 				countSpeedms = 1;
+				countSpeedName = "Sonic";
 			}
 
 	// Leave a space
 	std::cout << "\n";
 
 	// Next we confirm where we are counting from and to
-	std::cout << "To confirm we are counting from " << startNum << " to " << selectNum << " at count speed " << countSpeed << std::endl;
+	std::cout << "To confirm we are counting from " << startNum << " to " << selectNum << " at " << countSpeedName << " speed." << std::endl;
 	
 	
 	
